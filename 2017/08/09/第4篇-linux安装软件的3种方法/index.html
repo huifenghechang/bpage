@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="hexo,linux,python,编程，大学，感悟，研究生">
-<meta name="keywords" content="杭电">
+<meta name="description" content="前言 首次接触到linux,发现这种操作系统中和windows上很不相同。传统的windows操作系统下，只需要下载好安装程序，一路点击Next,就可以实现程序的安装，最复杂的也不过是要配置一下环境变量而已。而在linux操作系统中，安装方式多种多样。这篇博客主要是通过介绍windowns和linux下安装软件的原理出发，对比两者异同。最后，介绍linux下安装linux软件的三种方法。  软件安">
+<meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的大学生活">
-<meta property="og:url" content="https://huifenghechang.github.io/bpage/2017/08/07/我的大学生活/index.html">
+<meta property="og:title" content="第4篇-linux下安装软件的3种方式">
+<meta property="og:url" content="https://huifenghechang.github.io/bpage/2017/08/09/第4篇-linux安装软件的3种方法/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="hexo,linux,python,编程，大学，感悟，研究生">
+<meta property="og:description" content="前言 首次接触到linux,发现这种操作系统中和windows上很不相同。传统的windows操作系统下，只需要下载好安装程序，一路点击Next,就可以实现程序的安装，最复杂的也不过是要配置一下环境变量而已。而在linux操作系统中，安装方式多种多样。这篇博客主要是通过介绍windowns和linux下安装软件的原理出发，对比两者异同。最后，介绍linux下安装linux软件的三种方法。  软件安">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-08-07T06:23:47.479Z">
+<meta property="og:updated_time" content="2017-08-15T02:28:19.456Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的大学生活">
-<meta name="twitter:description" content="hexo,linux,python,编程，大学，感悟，研究生">
+<meta name="twitter:title" content="第4篇-linux下安装软件的3种方式">
+<meta name="twitter:description" content="前言 首次接触到linux,发现这种操作系统中和windows上很不相同。传统的windows操作系统下，只需要下载好安装程序，一路点击Next,就可以实现程序的安装，最复杂的也不过是要配置一下环境变量而已。而在linux操作系统中，安装方式多种多样。这篇博客主要是通过介绍windowns和linux下安装软件的原理出发，对比两者异同。最后，介绍linux下安装linux软件的三种方法。  软件安">
 
 <link rel="apple-touch-icon" href= "/bpage//apple-touch-icon.png">
 
@@ -58,7 +58,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>我的大学生活 | 我的博客</title>
+<title>第4篇-linux下安装软件的3种方式 | 我的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -221,11 +221,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-我的大学生活" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-第4篇-linux安装软件的3种方法" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/bpage/2017/08/07/我的大学生活/" class="article-date">
-      <time datetime="2017-08-07T06:22:16.000Z" itemprop="datePublished">2017-08-07</time>
+      <a href="/bpage/2017/08/09/第4篇-linux安装软件的3种方法/" class="article-date">
+      <time datetime="2017-08-09T05:48:47.000Z" itemprop="datePublished">2017-08-09</time>
 </a>
 
 
@@ -240,7 +240,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的大学生活
+      第4篇-linux下安装软件的3种方式
     </h1>
   
 
@@ -249,13 +249,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/bpage/categories/大学记忆/">大学记忆</a>
+    <a class="article-category-link" href="/bpage/categories/编程学习笔记/">编程学习笔记</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/bpage/tags/杭电/">杭电</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/bpage/tags/linux/">linux</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -265,7 +265,121 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>首次接触到linux,发现这种操作系统中和windows上很不相同。传统的windows操作系统下，只需要下载好安装程序，一路点击Next,就可以实现程序的安装，最复杂的也不过是要配置一下环境变量而已。而在linux操作系统中，安装方式多种多样。这篇博客主要是通过介绍windowns和linux下安装软件的原理出发，对比两者异同。最后，介绍linux下安装linux软件的三种方法。</p>
+</blockquote>
+<h3 id="软件安装的机制"><a href="#软件安装的机制" class="headerlink" title="软件安装的机制"></a>软件安装的机制</h3><blockquote>
+<p>参考文章：<br></p>
+<ol>
+<li><a href="http://www.maiziedu.com/course/312-3568/" target="_blank" rel="external">linux应用程序的安装和卸载</a><br></li>
+<li><a href="https://www.zhihu.com/question/20443070" target="_blank" rel="external">windows和linux安装方式的比较</a><br></li>
+</ol>
+</blockquote>
+<p>在操作系统环境中，程序主要分为两种。一种是普通的安装软件，另一种是供其他软件使用的依赖库。大多数的程序都是要利用系统中所安装的依赖库。在安装软件的过程中，每个软件都有对应的配置文件。所以，一个软件的安装可以简单的概括为链接依赖库和配置对应的配置文件。</p>
+<ul>
+<li>windows下的软件安装过程 ：</li>
+</ul>
+<p>windows下系统的安装过程，都是有一个安装程序来完成的。这个安装文件的格式是一个exe格式的，最后安装好之后，也会生成一个exe文件格式的软件。安装背后的具体操作如下：<br><br>（1）在Program Files 文件夹下建立程序文件夹。<br><br>（2）复制相关的依赖库到程序文件夹下或者系统文件夹下。windows下的依赖库文件格式为.dll<br><br>（3）复制可执行文件到程序文件夹下，比如对应的exe文件。<br><br>（4）复制配置文件到程序文件夹或者系统文件夹下。windows下的配置文件格式为.ini<br><br>（5）把启动配置或者程序的依赖配置放到注册表中。<br><br>（6）如果有自定义服务程序，注册并启动服务程序。</p>
+<p><em>从上面的过程中，我们可以总结出，软件的安装的过程有点想生物里面的细胞分裂。无非就是将软件包需要的文件复制到本地，然后更改一下配置文件，链接一下所需要的依赖库，最后就可以运行了。</em></p>
+<ul>
+<li>linux下系统的安装过程<br><br>（1）复制相关类库<br><br>（2）复制可执行程序<br><br>（3）配置到相应的目录<br><br>（4）根据需要选择性配置和开启服务<br></li>
+</ul>
+<hr>
+<h3 id="linux下软件安装的三种方式。"><a href="#linux下软件安装的三种方式。" class="headerlink" title="linux下软件安装的三种方式。"></a>linux下软件安装的三种方式。</h3><p>在linux操作系统中，主要有三种方式来安装软件。分别是<strong>源码安装</strong>，使用<strong>软件包管理工具dpkg</strong>安装,<br>以及使用<strong>apt-get</strong>软件包管理包来安装</p>
+<h4 id="1-源码安装"><a href="#1-源码安装" class="headerlink" title="1. 源码安装"></a>1. 源码安装</h4><p>源码安装的步骤如下<br>  <br>(1)从官网下载源码，并且解压缩到指定的文件夹<br><br>  (2)进入软件目录运行命令<code>./configure</code>,生成配置文件<br><br>  (3)<code>make</code> ，编译，将源码编译成对应的二进制文件。<br><br>  (4)<code>make install</code> 安装。此过程对应上面所叙述的复制类库等操作。<br><br>  (5)<code>make uninstall</code>  卸载软件。</p>
+<h4 id="2-使用软件包管理工具dpkg来安装"><a href="#2-使用软件包管理工具dpkg来安装" class="headerlink" title="2. 使用软件包管理工具dpkg来安装"></a>2. 使用软件包管理工具dpkg来安装</h4><p>  使用软件包管理工具来安装软件类似于windows中的安装方式。这些软件包都是已经编译好了的<br>  二进制格式的安装包格式。常见的软件包格式有一下两种</p>
+<table>
+<thead>
+<tr>
+<th>软件包格式</th>
+<th style="text-align:center">应用的场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rmp</td>
+<td style="text-align:center">Red Hat linux的软件包格式</td>
+</tr>
+<tr>
+<td>deb</td>
+<td style="text-align:center">Debian Linux的软件包格式，是一种二进制格式的软件包安装格式。全称为debian binary.由于Ubutu是基于debian的，所以在Ubuntu的操作系统中，也可是使用这种格式的安装包</td>
+</tr>
+</tbody>
+</table>
+<p>在使用软件包的安装方式中，用到的工具是<strong>dpkg</strong>的debian的包管理器，全称是debian package.对于dpkg的具体用法，可以用man dpkg 来查询。<br>但是dpkg现在应用的比较少，主要是因为有一下缺点：<br><br><code>1. 不能主动在镜像网站来获取软件包</code><br><br><code>2. 安装软件包时，不能自动的安装相关依赖包</code><br></p>
+<p>对于dpkg的包操作，主要有一下几种：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">操作命令</th>
+<th style="text-align:center">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">dpkg -i &lt;package&gt;</td>
+<td style="text-align:center">利用下载好了的包来安装程序</td>
+</tr>
+<tr>
+<td style="text-align:center">dpkg -r &lt;package&gt;</td>
+<td style="text-align:center">移除安装好的程序</td>
+</tr>
+<tr>
+<td style="text-align:center">dpkg -p &lt;package&gt;</td>
+<td style="text-align:center">移除安装好的程序以及配置文件</td>
+</tr>
+<tr>
+<td style="text-align:center">dpkg -l &lt;package&gt;</td>
+<td style="text-align:center">列出所有安装包的清单</td>
+</tr>
+<tr>
+<td style="text-align:center">dpkg -info</td>
+<td style="text-align:center">查看包中的信息</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-使用在线管理工具apt-get来安装"><a href="#3-使用在线管理工具apt-get来安装" class="headerlink" title="3. 使用在线管理工具apt-get来安装"></a>3. 使用在线管理工具<strong>apt-get</strong>来安装</h4><p>apt-get是一个在线的智能管理工具，可以用来安装，卸载和升级软件。它的实现原理是，读取镜像站点的地址，自动查找对应的软件信息，自动的安装相关的依赖程序，从而安装程序。在这种安装方法中，经常要做一件事情，那就是更改镜像源。因为linux默认的镜像源服务器在国外，下载软件的过程十分的缓慢，一般都需要更改镜像源，比较好的源有阿里的和网易的这些。更改镜像源的文件地址在/etc/apt/sources.list</p>
+<p>对于这种安装方式，常用的命令主要有一下几种：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">命令</th>
+<th style="text-align:left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">apt-get update</td>
+<td style="text-align:left">更新镜像源的地址</td>
+</tr>
+<tr>
+<td style="text-align:left">apt-get upgrade</td>
+<td style="text-align:left">自动升级软件包到最新的版本</td>
+</tr>
+<tr>
+<td style="text-align:left">apt-get install &lt;package&gt;</td>
+<td style="text-align:left">安装软件</td>
+</tr>
+<tr>
+<td style="text-align:left">apt-get -f install</td>
+<td style="text-align:left">修复依赖包的关系</td>
+</tr>
+<tr>
+<td style="text-align:left">apt-get remove &lt;package&gt;</td>
+<td style="text-align:left">卸载软件</td>
+</tr>
+<tr>
+<td style="text-align:left">apt-get remove –purge &lt;package&gt;</td>
+<td style="text-align:left">卸载完全，包括配置文件等信息</td>
+</tr>
+<tr>
+<td style="text-align:left">apt-get install -d</td>
+<td style="text-align:left">只下载（deb）软件包，不安装。使用apt-get 下载的软件包默认的存放路径是：<code>/var/cache/apt/archives</code></td>
+</tr>
+</tbody>
+</table>
+<p><em>综上所述，apt-get install 来安装软件的基本工作步骤如下</em><br><br><em>1. 扫描本地软件包列表（apt-get update 刷新软件包列表)</em><br><br><em>2. 进行软件包依赖关系检查(自动进行)</em><br><br><em>3. 从软件包指定的apt源中下载软件包以及相应的依赖库</em><br><br><em>4. 解压缩软件包，并完成软件的安装和配置</em><br></p>
+
       
     </div>
     
@@ -273,13 +387,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/bpage/2017/08/07/我的大学生活/">我的大学生活</a></p>
+        <p><span>本文标题:</span><a href="/bpage/2017/08/09/第4篇-linux安装软件的3种方法/">第4篇-linux下安装软件的3种方式</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">恵风和畅</a></p>
-        <p><span>发布时间:</span>2017-08-07, 14:22:16</p>
-        <p><span>最后更新:</span>2017-08-07, 14:23:47</p>
+        <p><span>发布时间:</span>2017-08-09, 13:48:47</p>
+        <p><span>最后更新:</span>2017-08-15, 10:28:19</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/bpage/2017/08/07/我的大学生活/" title="我的大学生活">https://huifenghechang.github.io/bpage/2017/08/07/我的大学生活/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://huifenghechang.github.io/bpage/2017/08/07/我的大学生活/　　作者: 恵风和畅" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/bpage/2017/08/09/第4篇-linux安装软件的3种方法/" title="第4篇-linux下安装软件的3种方式">https://huifenghechang.github.io/bpage/2017/08/09/第4篇-linux安装软件的3种方法/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://huifenghechang.github.io/bpage/2017/08/09/第4篇-linux安装软件的3种方法/　　作者: 恵风和畅" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -291,16 +405,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/bpage/2017/08/08/第1篇-如何增删Linux用户？/">
-                    第1篇-如何增删Linux用户？
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/bpage/2017/08/05/追去来兮辞/">
-                    追去来兮辞
+                <a href="/bpage/2017/08/08/第3篇-linux的文件目录及路径/">
+                    第3篇-linux的文件目录及路径
                 </a>
             </div>
         
@@ -312,7 +420,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#软件安装的机制"><span class="toc-number">2.</span> <span class="toc-text">软件安装的机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#linux下软件安装的三种方式。"><span class="toc-number">3.</span> <span class="toc-text">linux下软件安装的三种方式。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-源码安装"><span class="toc-number">3.1.</span> <span class="toc-text">1. 源码安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-使用软件包管理工具dpkg来安装"><span class="toc-number">3.2.</span> <span class="toc-text">2. 使用软件包管理工具dpkg来安装</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-使用在线管理工具apt-get来安装"><span class="toc-number">3.3.</span> <span class="toc-text">3. 使用在线管理工具apt-get来安装</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -343,15 +451,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/bpage/2017/08/08/第1篇-如何增删Linux用户？/" title="上一篇: 第1篇-如何增删Linux用户？">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/bpage/2017/08/05/追去来兮辞/" title="下一篇: 追去来兮辞">
+            <a href="/bpage/2017/08/08/第3篇-linux的文件目录及路径/" title="下一篇: 第3篇-linux的文件目录及路径">
                 <i class="fa fa-angle-right"></i>
             </a>
         

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html lang="zh-cn">
 <head>
 
     <!--[if lt IE 9]>
@@ -15,17 +15,20 @@
 
 
 
-<meta name="description" content="兰亭集序【作者】王羲之 【朝代】魏晋 永和九年， 岁在癸丑， 暮春之初， 会于会稽山阴之兰亭， 修禊事也。 群贤毕至， 少长咸集。 此地有崇山峻岭， 茂林修竹， 又有清流激湍， 映带左右， 引以为流觞曲水， 列坐其次。 虽无丝竹管弦之盛， 一觞一咏， 亦足以畅叙幽情。 是日也， 天朗气清， 惠风和畅。 仰观宇宙之大， 俯察品类之盛， 所以游目骋怀， 足以极视听之娱， 信可乐也。 夫人之相与，">
-<meta name="keywords" content="古文">
+<meta name="description" content="前言 在linux操作系统中，有着一切皆文件的说法，对于文件路径来说，是经常会用到的。所以，在学习的过程中，不可避免的对这些知识点有了疑惑，于是整理一番，有了接下来的这篇文章。  文件路径的表示方法及其含义在操作系统中，表示路径有两种方式，一种是绝对路径，一种是相对路径。  绝对路径：写法一定是从根目录“/”开始的。 相对路径：根据当前所处的目录来表示目标目录。  在操作系统中，每个目录都有两个特">
+<meta name="keywords" content="linux">
 <meta property="og:type" content="article">
-<meta property="og:title" content="兰亭集序">
-<meta property="og:url" content="http://yoursite.com/2017/08/05/兰亭集序/index.html">
+<meta property="og:title" content="第3篇-linux的文件目录及路径">
+<meta property="og:url" content="https://huifenghechang.github.io/bpage/2017/08/08/第3篇-linux的文件目录及路径/index.html">
 <meta property="og:site_name" content="我的博客">
-<meta property="og:description" content="兰亭集序【作者】王羲之 【朝代】魏晋 永和九年， 岁在癸丑， 暮春之初， 会于会稽山阴之兰亭， 修禊事也。 群贤毕至， 少长咸集。 此地有崇山峻岭， 茂林修竹， 又有清流激湍， 映带左右， 引以为流觞曲水， 列坐其次。 虽无丝竹管弦之盛， 一觞一咏， 亦足以畅叙幽情。 是日也， 天朗气清， 惠风和畅。 仰观宇宙之大， 俯察品类之盛， 所以游目骋怀， 足以极视听之娱， 信可乐也。 夫人之相与，">
-<meta property="og:updated_time" content="2017-08-05T13:54:37.390Z">
+<meta property="og:description" content="前言 在linux操作系统中，有着一切皆文件的说法，对于文件路径来说，是经常会用到的。所以，在学习的过程中，不可避免的对这些知识点有了疑惑，于是整理一番，有了接下来的这篇文章。  文件路径的表示方法及其含义在操作系统中，表示路径有两种方式，一种是绝对路径，一种是相对路径。  绝对路径：写法一定是从根目录“/”开始的。 相对路径：根据当前所处的目录来表示目标目录。  在操作系统中，每个目录都有两个特">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:image" content="http://oubdbo318.bkt.clouddn.com/1.jpg">
+<meta property="og:updated_time" content="2017-08-14T11:47:14.406Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="兰亭集序">
-<meta name="twitter:description" content="兰亭集序【作者】王羲之 【朝代】魏晋 永和九年， 岁在癸丑， 暮春之初， 会于会稽山阴之兰亭， 修禊事也。 群贤毕至， 少长咸集。 此地有崇山峻岭， 茂林修竹， 又有清流激湍， 映带左右， 引以为流觞曲水， 列坐其次。 虽无丝竹管弦之盛， 一觞一咏， 亦足以畅叙幽情。 是日也， 天朗气清， 惠风和畅。 仰观宇宙之大， 俯察品类之盛， 所以游目骋怀， 足以极视听之娱， 信可乐也。 夫人之相与，">
+<meta name="twitter:title" content="第3篇-linux的文件目录及路径">
+<meta name="twitter:description" content="前言 在linux操作系统中，有着一切皆文件的说法，对于文件路径来说，是经常会用到的。所以，在学习的过程中，不可避免的对这些知识点有了疑惑，于是整理一番，有了接下来的这篇文章。  文件路径的表示方法及其含义在操作系统中，表示路径有两种方式，一种是绝对路径，一种是相对路径。  绝对路径：写法一定是从根目录“/”开始的。 相对路径：根据当前所处的目录来表示目标目录。  在操作系统中，每个目录都有两个特">
+<meta name="twitter:image" content="http://oubdbo318.bkt.clouddn.com/1.jpg">
 
 <link rel="apple-touch-icon" href= "/bpage//apple-touch-icon.png">
 
@@ -57,7 +60,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>兰亭集序 | 我的博客</title>
+<title>第3篇-linux的文件目录及路径 | 我的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -103,6 +106,8 @@
           <h1 class="header-author"><a href="/bpage/">恵风和畅</a></h1>
         </hgroup>
 
+        
+        <p class="header-subtitle">是日也，天朗气清，恵风和畅！</p>
         
 
         
@@ -185,6 +190,8 @@
               <h1 class="header-author"><a href="/bpage/" title="回到主页">恵风和畅</a></h1>
             </hgroup>
             
+            <p class="header-subtitle">是日也，天朗气清，恵风和畅！</p>
+            
             <nav class="header-menu">
                 <ul>
                 
@@ -216,11 +223,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-兰亭集序" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-第3篇-linux的文件目录及路径" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/bpage/2017/08/05/兰亭集序/" class="article-date">
-      <time datetime="2017-08-05T13:51:14.000Z" itemprop="datePublished">2017-08-05</time>
+      <a href="/bpage/2017/08/08/第3篇-linux的文件目录及路径/" class="article-date">
+      <time datetime="2017-08-08T05:48:47.000Z" itemprop="datePublished">2017-08-08</time>
 </a>
 
 
@@ -235,7 +242,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      兰亭集序
+      第3篇-linux的文件目录及路径
     </h1>
   
 
@@ -244,13 +251,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/bpage/categories/古文集/">古文集</a>
+    <a class="article-category-link" href="/bpage/categories/编程学习笔记/">编程学习笔记</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/bpage/tags/古文/">古文</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/bpage/tags/linux/">linux</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -260,11 +267,64 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>  兰亭集序<br>【作者】王羲之 【朝代】魏晋</p>
-<p>永和九年， 岁在癸丑， 暮春之初， 会于会稽山阴之兰亭， 修禊事也。 群贤毕至， 少长咸集。 此地有崇山峻岭， 茂林修竹， 又有清流激湍， 映带左右， 引以为流觞曲水， 列坐其次。 虽无丝竹管弦之盛， 一觞一咏， 亦足以畅叙幽情。</p>
-<p>是日也， 天朗气清， 惠风和畅。 仰观宇宙之大， 俯察品类之盛， 所以游目骋怀， 足以极视听之娱， 信可乐也。</p>
-<p>夫人之相与， 俯仰一世。 或取诸怀抱， 悟言一室之内； 或因寄所托， 放浪形骸之外。 虽趣舍万殊， 静躁不同， 当其欣于所遇， 暂得于己， 快然自足， 不知老之将至； 及其所之既倦， 情随事迁， 感慨系之矣。 向之所欣， 俯仰之间， 已为陈迹， 犹不能不以之兴怀， 况修短随化， 终期于尽！ 古人云： “死生亦大矣。” 岂不痛哉！</p>
-<p>每览昔人兴感之由， 若合一契， 未尝不临文嗟悼， 不能喻之于怀。 固知一死生为虚诞， 齐彭殇为妄作。 后之视今， 亦犹今之视昔， 悲夫！ 故列叙时人， 录其所述， 虽世殊事异， 所以兴怀， 其致一也。 后之览者， 亦将有感于斯文。 </p>
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>在linux操作系统中，有着一切皆文件的说法，对于文件路径来说，是经常会用到的。所以，在学习的过程中，不可避免的对这些知识点有了疑惑，于是整理一番，有了接下来的这篇文章。</p>
+</blockquote>
+<h3 id="文件路径的表示方法及其含义"><a href="#文件路径的表示方法及其含义" class="headerlink" title="文件路径的表示方法及其含义"></a>文件路径的表示方法及其含义</h3><p>在操作系统中，表示路径有两种方式，一种是绝对路径，一种是相对路径。</p>
+<ol>
+<li>绝对路径：写法一定是从根目录“/”开始的。</li>
+<li>相对路径：根据当前所处的目录来表示目标目录。</li>
+</ol>
+<p>在操作系统中，每个目录都有两个特殊的目录，“.”和“..”目录。</p>
+<ul>
+<li>“.”目录表示当前目录</li>
+<li>“..”目录表示当前目录的上一个目录。</li>
+</ul>
+<p>用绝对路径表示根目录下的etc目录的目录dir下的file文件：<code>/etc/dir/file</code><br>若我们当前在file目录下，那用相对路径表示etc目录为：<code>../etc</code></p>
+<h3 id="linux操作系统中的文件分类"><a href="#linux操作系统中的文件分类" class="headerlink" title="linux操作系统中的文件分类"></a>linux操作系统中的文件分类</h3><p>linux操作系统中的文件结构如下：</p>
+<p><img src="http://oubdbo318.bkt.clouddn.com/1.jpg" alt="文件结构图" title="strcuct picture"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件夹名</th>
+<th style="text-align:center">存放的文件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">/bin</td>
+<td style="text-align:center">用以存储二进制可执行命令文件</td>
+</tr>
+<tr>
+<td style="text-align:center">/sbin</td>
+<td style="text-align:center">许多系统命令的存储位置，/usr/sbin/中也包括了许多命令。</td>
+</tr>
+<tr>
+<td style="text-align:center">/home</td>
+<td style="text-align:center">普通用户的默认目录，在该目录下，每个用户拥有一个以用户名命名的文件夹。</td>
+</tr>
+<tr>
+<td style="text-align:center">/dev</td>
+<td style="text-align:center">存储设备文件，包括计算机的所有外部设备，如硬盘、是、键盘、鼠标等。</td>
+</tr>
+<tr>
+<td style="text-align:center">/boot</td>
+<td style="text-align:center">存放Ubuntu内核和系统启动文件。</td>
+</tr>
+<tr>
+<td style="text-align:center">/etc</td>
+<td style="text-align:center">存放配置文件</td>
+</tr>
+<tr>
+<td style="text-align:center">/usr</td>
+<td style="text-align:center">包括与系统用户直接有关的文件和目录</td>
+</tr>
+<tr>
+<td style="text-align:center">/opt</td>
+<td style="text-align:center">作为可选文件和程序的存放目录，一般自己安装的软件存放在该目录下</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -273,13 +333,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/bpage/2017/08/05/兰亭集序/">兰亭集序</a></p>
+        <p><span>本文标题:</span><a href="/bpage/2017/08/08/第3篇-linux的文件目录及路径/">第3篇-linux的文件目录及路径</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">恵风和畅</a></p>
-        <p><span>发布时间:</span>2017-08-05, 21:51:14</p>
-        <p><span>最后更新:</span>2017-08-05, 21:54:37</p>
+        <p><span>发布时间:</span>2017-08-08, 13:48:47</p>
+        <p><span>最后更新:</span>2017-08-14, 19:47:14</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/bpage/2017/08/05/兰亭集序/" title="兰亭集序">http://yoursite.com/2017/08/05/兰亭集序/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/08/05/兰亭集序/　　作者: 恵风和畅" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/bpage/2017/08/08/第3篇-linux的文件目录及路径/" title="第3篇-linux的文件目录及路径">https://huifenghechang.github.io/bpage/2017/08/08/第3篇-linux的文件目录及路径/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://huifenghechang.github.io/bpage/2017/08/08/第3篇-linux的文件目录及路径/　　作者: 恵风和畅" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -292,15 +352,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/bpage/2017/08/05/追去来兮辞/">
-                    追去来兮辞
+                <a href="/bpage/2017/08/09/第4篇-linux安装软件的3种方法/">
+                    第4篇-linux下安装软件的3种方式
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/bpage/2017/08/05/hello-world/">
-                    Hello World
+                <a href="/bpage/2017/08/08/第2篇-linux系统在用户与用户组的概念/">
+                    第2篇-转-linux系统在用户与用户组的概念
                 </a>
             </div>
         
@@ -312,7 +372,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文件路径的表示方法及其含义"><span class="toc-number">2.</span> <span class="toc-text">文件路径的表示方法及其含义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#linux操作系统中的文件分类"><span class="toc-number">3.</span> <span class="toc-text">linux操作系统中的文件分类</span></a></li></ol>
         
     </div>
     <style>
@@ -334,31 +394,6 @@
 
 
 
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"兰亭集序　| 我的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
-
-    
-</div>
-
-
-
-
-
 
 
     
@@ -368,7 +403,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/bpage/2017/08/05/追去来兮辞/" title="上一篇: 追去来兮辞">
+            <a href="/bpage/2017/08/09/第4篇-linux安装软件的3种方法/" title="上一篇: 第4篇-linux下安装软件的3种方式">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -376,13 +411,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/bpage/2017/08/05/hello-world/" title="下一篇: Hello World">
+            <a href="/bpage/2017/08/08/第2篇-linux系统在用户与用户组的概念/" title="下一篇: 第2篇-转-linux系统在用户与用户组的概念">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/07/我的大学生活/">我的大学生活</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/05/追去来兮辞/">追去来兮辞</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/05/兰亭集序/">兰亭集序</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/05/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/09/第4篇-linux安装软件的3种方法/">第4篇-linux下安装软件的3种方式</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/08/第3篇-linux的文件目录及路径/">第3篇-linux的文件目录及路径</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/08/第2篇-linux系统在用户与用户组的概念/">第2篇-转-linux系统在用户与用户组的概念</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/08/第1篇-如何增删Linux用户？/">第1篇-如何增删Linux用户？</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/07/我的大学生活/">我的大学生活</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/05/追去来兮辞/">追去来兮辞</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/05/兰亭集序0/">兰亭集序</a></li><li class="post-list-item"><a class="post-list-link" href="/bpage/2017/08/05/劝学/">劝学</a></li></ul>
 
 
 
